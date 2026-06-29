@@ -240,7 +240,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag"); // Le tag sélectionné n'avait que la classe active-tag, or c'est la classe "active" qui donne le style au tag sélectionné
 
       var tag = $(this).data("images-toggle");
 
